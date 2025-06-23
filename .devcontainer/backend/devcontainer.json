@@ -1,0 +1,27 @@
+{
+	"name": "backend",
+	"dockerComposeFile": [
+		"../../docker-compose.yml"
+	],
+	"service": "backend",
+	"workspaceFolder": "/home/cozy/backend",
+	"remoteUser": "cozy",
+	"shutdownAction": "stopCompose",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"vmware.vscode-boot-dev-pack",
+				"vscjava.vscode-java-pack",
+				"rvest.vs-code-prettier-eslint"
+			],
+			"settings": {
+				"editor.formatOnSave": true,
+				"[java]": {
+					"editor.defaultFormatter": "redhat.java"
+				},
+				"java.format.settings.url": "/home/cozy/backend/formatter.xml",
+				"java.format.settings.profile": "GoogleStyle"
+				}
+		}
+	}
+}
