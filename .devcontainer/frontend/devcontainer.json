@@ -1,0 +1,32 @@
+{
+	"name": "frontend",
+	"dockerComposeFile": [
+		"../../docker-compose.yml"
+	],
+	"service": "frontend",
+	"workspaceFolder": "/home/frontend",
+	"remoteUser": "root",
+	"shutdownAction": "stopCompose",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"Vue.volar",
+				"hollowtree.vue-snippets",
+				"esbenp.prettier-vscode",
+				"bradlc.vscode-tailwindcss"
+			],
+			"settings": {
+				"editor.formatOnSave": true,
+				"[javascript]": {
+					"editor.defaultFormatter": "esbenp.prettier-vscode"
+				},
+				"[typescript]": {
+					"editor.defaultFormatter": "esbenp.prettier-vscode"
+				},
+				"[vue]": {
+					"editor.defaultFormatter": "esbenp.prettier-vscode"
+				}
+			}
+		}
+	}
+}
